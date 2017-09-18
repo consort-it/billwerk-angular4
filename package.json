@@ -1,0 +1,48 @@
+{
+  "name": "typenode",
+  "description": "A basic template for using NodeJS with Typescript",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Benjamin Damm",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./bin/www",
+    "grunt": "grunt",
+    "test": "mocha dist/test",
+    "start": "npm run grunt ts && node ./bin/www",
+    "lint": "ng lint",
+    "lint-fix": "tslint --fix \"src/**/*.ts\" -t verbose",
+    "tslint": "tslint"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "errorhandler": "^1.5.0",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "q": "^1.5.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "1.16.4",
+    "@types/chai": "^4.0.2",
+    "@types/cookie-parser": "^1.4.0",
+    "@types/errorhandler": "0.0.30",
+    "@types/method-override": "0.0.29",
+    "@types/mocha": "^2.2.41",
+    "@types/morgan": "^1.7.32",
+    "chai": "^4.1.1",
+    "codelyzer": "~3.1.2",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.16",
+    "mocha": "^3.5.0",
+    "mocha-typescript": "^1.1.7",
+    "nodemon": "^1.11.0",
+    "tslint-loader": "^3.5.3",
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2"
+  }
+}
